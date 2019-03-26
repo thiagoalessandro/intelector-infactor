@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pagina 1</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/user}" th:object="${user}" method="post">
+
+<label>Name:</label>
+<input type="text" th:field="*{name}" />
+
+<input type="submit" value="Enviar" />
+
+</form>
+
+</body>
+</html>
